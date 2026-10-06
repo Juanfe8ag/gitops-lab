@@ -3,9 +3,9 @@ framework:
 compact: true
 quiet: true
 skip-check:
-  - CKV_AZURE_59: # El contenedor $web aloja un sitio web estático público que requiere acceso web sin restricciones de red privada.
-  - CKV2_AZURE_33: # No se requiere Private Endpoint dado que los recursos son consumidos públicamente por Internet bajo costo mínimo de laboratorio.
-  - CKV2_AZURE_1: # Se utilizan claves administradas por la plataforma (Microsoft-managed keys) suficientes para mitigar costos y complejidad de Key Vault en Azure for Students.
-  - CKV_AZURE_206: # Se utiliza redundancia local (LRS) para optimizar el crédito educativo asignado frente a opciones GRS o ZRS de alto costo.
-  - CKV_AZURE_33: # El servicio de colas (Queue Service) no se utiliza en esta arquitectura orientada únicamente a hosting de blobs web.
-  - CKV2_AZURE_40: # Se requiere autorización por clave compartida para permitir la carga y actualización del blob index.html mediante el proveedor azurerm. 
+  - CKV_AZURE_59 # El contenedor $web aloja un sitio web estático público que requiere acceso web sin restricciones de red privada.
+  - CKV2_AZURE_33 # No se requiere Private Endpoint dado que los recursos son consumidos públicamente por Internet bajo costo mínimo de laboratorio.
+  - CKV2_AZURE_1 # Se utilizan claves administradas por la plataforma (Microsoft-managed keys) suficientes para mitigar costos y complejidad de Key Vault en Azure for Students.
+  - CKV_AZURE_206 # Se utiliza redundancia local (LRS) para optimizar el crédito educativo asignado frente a opciones GRS o ZRS de alto costo.
+  - CKV_AZURE_33 # El servicio de colas (Queue Service) no se utiliza en esta arquitectura orientada únicamente a hosting de blobs web.
+  - CKV2_AZURE_40 # Se requiere autorización por clave compartida para permitir la carga y actualización del blob index.html mediante el proveedor azurerm. 
