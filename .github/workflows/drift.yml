@@ -1,8 +1,6 @@
 name: drift
 
 on:
-  schedule:
-    - cron: "0 11 * * *"     # todos los días a las 06:00 hora de Bogotá
   workflow_dispatch:
 
 permissions:
